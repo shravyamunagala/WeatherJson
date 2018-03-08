@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.lwu.weatherjson.MainActivity">
+
+    <Button
+        android:id="@+id/button_parse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="GetWeather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvtitle" />
+
+    <TextView
+        android:id="@+id/txvTemp"
+        android:layout_width="112dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvDate" />
+
+    <EditText
+        android:id="@+id/edtCity"
+        android:textColor="#ffffff"
+        android:layout_width="142dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvtitle"
+        android:textColor="#ffffff"
+        android:layout_width="174dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif"
+        android:text="Please Input your Location"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/edtCity"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvyahoo"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="36dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_parse" />
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txvTemp"
+        app:layout_constraintTop_toTopOf="@+id/txvTemp" />
+
+    <TextView
+        android:id="@+id/txvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvyahoo" />
+
+
+</android.support.constraint.ConstraintLayout>
